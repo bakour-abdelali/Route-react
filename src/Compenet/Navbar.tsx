@@ -1,29 +1,32 @@
 // src/components/Navbar.js
 
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 
 
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center card">
         <div className="text-white text-2xl font-bold">
           Codepulse
         </div>
         <div className="space-x-4">
-          <Link to="" className="text-gray-300 hover:text-white">
+          <NavLink to="/" className="text-white">
             Home
-          </Link>
-          <Link to="About" className="text-gray-300 hover:text-white">
+          </NavLink>
+          <NavLink to="/About" className="text-white">
             About
-          </Link>
-          <Link to="Services" className="text-gray-300 hover:text-white">
+          </NavLink>
+          <NavLink to="/Services" className="text-white">
             Services
-          </Link>
-          <Link to="Contact" className="text-gray-300 hover:text-white">
+          </NavLink>
+          <NavLink to="/Contact" className="text-white">
             Contact
-          </Link>
+          </NavLink>
+          <NavLink to="/learn" className="text-white">
+          learn
+          </NavLink>
         </div>
       </div>
     </nav>

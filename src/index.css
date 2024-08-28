@@ -1,3 +1,25 @@
+nav:active {
+    color: #149aca;
+    font-size: large;
+    
+  }
+  
+  a:hover {
+    color: #149aca;
+  }
+  
+  /* تحديد اللون المميز للعنصر المختار */
+  nav a.active {
+    color: #149aca; /* لون مميز للعنصر المختار */
+    font-weight: bold;
+  }
+  
+  /* إذا كنت تريد تأثيرًا عند مرور الفأرة على العناصر */
+  nav a:hover {
+    color: #149aca;
+  }
+  
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
