@@ -12,7 +12,7 @@ const Navbar = () => {
           Codepulse
         </div>
         <div className="space-x-4">
-          <Link to="Homme" className="text-gray-300 hover:text-white">
+          <Link to="" className="text-gray-300 hover:text-white">
             Home
           </Link>
           <Link to="About" className="text-gray-300 hover:text-white">
@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link to="Services" className="text-gray-300 hover:text-white">
             Services
           </Link>
-          <Link to="#" className="text-gray-300 hover:text-white">
+          <Link to="Contact" className="text-gray-300 hover:text-white">
             Contact
           </Link>
         </div>

@@ -1,25 +1,22 @@
-import { createBrowserRouter, createRoutesFromElements, Outlet, Route } from "react-router-dom";
-import Navbar from "../Compenet/Navbar";
+import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
+
+import HommePage from "../pages";
+import About from "../pages/About";
+import Services from "../pages/Services";
+import Contact from "../pages/Contact";
+import RootLayaout from "../pages/RootLayaout";
 
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-
-        <>
-       <Route path="/" element={<div className="text-red-600 text-center">
-        <Navbar/>
-        <Outlet/>
-       </div>}>
-       <Route path="Homme" element={<div className="text-red-600 text-center">Homm page</div>}/>
-     
-     <Route path="About" element={<div className="text-red-600 text-center">About page</div>}/>
-     <Route path="Services" element={<div className="text-red-600 text-center">Services</div>}/>
+        
+       <Route path="/"     element={<RootLayaout />}>
+     <Route index element={<HommePage/>}/>
+     <Route path="About"    element={<About/>}/>
+     <Route path="Services" element={<Services/>}/>
+     <Route path="Contact" element={<Contact/>}/>
        </Route>
         
-        
-      
-        </>
-      
     )
   );
   export default router;
